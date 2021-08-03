@@ -13,6 +13,8 @@
 		C895809E26B980EA00494247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C895809C26B980EA00494247 /* Main.storyboard */; };
 		C89580A026B980EB00494247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C895809F26B980EB00494247 /* Assets.xcassets */; };
 		C89580A326B980EB00494247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89580A126B980EB00494247 /* LaunchScreen.storyboard */; };
+		C89580AD26B9822700494247 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89580AB26B9822700494247 /* ModalViewController.swift */; };
+		C89580AE26B9822700494247 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89580AC26B9822700494247 /* ModalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C895809F26B980EB00494247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C89580A226B980EB00494247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C89580A426B980EB00494247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89580AB26B9822700494247 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		C89580AC26B9822700494247 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		C895809526B980EA00494247 /* atsuwo210803practice9 */ = {
 			isa = PBXGroup;
 			children = (
+				C89580AA26B981C400494247 /* ModalView */,
 				C895809626B980EA00494247 /* AppDelegate.swift */,
 				C895809826B980EA00494247 /* SceneDelegate.swift */,
 				C895809A26B980EA00494247 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				C89580A426B980EB00494247 /* Info.plist */,
 			);
 			path = atsuwo210803practice9;
+			sourceTree = "<group>";
+		};
+		C89580AA26B981C400494247 /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				C89580AB26B9822700494247 /* ModalViewController.swift */,
+				C89580AC26B9822700494247 /* ModalViewController.xib */,
+			);
+			path = ModalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89580AE26B9822700494247 /* ModalViewController.xib in Resources */,
 				C89580A326B980EB00494247 /* LaunchScreen.storyboard in Resources */,
 				C89580A026B980EB00494247 /* Assets.xcassets in Resources */,
 				C895809E26B980EA00494247 /* Main.storyboard in Resources */,
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89580AD26B9822700494247 /* ModalViewController.swift in Sources */,
 				C895809B26B980EA00494247 /* ViewController.swift in Sources */,
 				C895809726B980EA00494247 /* AppDelegate.swift in Sources */,
 				C895809926B980EA00494247 /* SceneDelegate.swift in Sources */,
