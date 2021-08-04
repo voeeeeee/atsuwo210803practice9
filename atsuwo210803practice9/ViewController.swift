@@ -18,8 +18,11 @@ class ViewController: UIViewController {
 
     @IBAction func tappedModal(_ sender: Any) {
         let vc = ModalViewController()
-        vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc, animated: true)
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+
+        self.present(nav, animated: true, completion: nil)
+
         print("aa")
     }
 
