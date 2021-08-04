@@ -2,7 +2,7 @@
 //  ModalViewController.swift
 //  atsuwo210803practice9
 //
-//  Created by 竹辻篤志 on 2021/08/03.
+//  Created by 竹辻篤志 on 2021/08/04.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ class ModalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
+
         // Do any additional setup after loading the view.
     }
 

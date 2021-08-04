@@ -7,19 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
+class ViewController: UIViewController {
 
     @IBOutlet weak var prefactureLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
     @IBAction func tappedModal(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ModalViewController") as! ModalViewController
-//        let vc = ModalViewController()
-//        vc.modalPresentationStyle = .custom
-//        vc.transitioningDelegate = self
+        let vc = ModalViewController()
+        vc.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(vc, animated: true)
         print("aa")
     }
