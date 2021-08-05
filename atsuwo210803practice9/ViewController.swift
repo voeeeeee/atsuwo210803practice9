@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         let vc = ModalViewController()
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
-
         self.present(nav, animated: true, completion: nil)
 
         print("aa")
