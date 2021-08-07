@@ -10,20 +10,32 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var prefactureLabel: UILabel!
+    let vc = ModalViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        vc.didTapHandler1 = {
+            self.prefactureLabel.text = "東京都"
+        }
+        vc.didTapHandler2 = {
+            self.prefactureLabel.text = "千葉県"
+        }
+        vc.didTapHandler3 = {
+            self.prefactureLabel.text = "神奈川県"
+        }
+        vc.didTapHandler4 = {
+            self.prefactureLabel.text = "埼玉県"
+        }
     }
 
     @IBAction func tappedModal(_ sender: Any) {
-        let vc = ModalViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        self.present(nav, animated: true, completion: nil)
-
-        print("aa")
+        let navi = UINavigationController(rootViewController: vc)
+        navi.modalPresentationStyle = .fullScreen
+        self.present(navi, animated: true, completion: nil)
     }
-
 }
 

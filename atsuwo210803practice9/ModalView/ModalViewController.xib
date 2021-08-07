@@ -17,14 +17,54 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="ModalViewController" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjb-1F-clB">
+                    <rect key="frame" x="184" y="94" width="46" height="30"/>
+                    <state key="normal" title="東京都"/>
+                    <connections>
+                        <action selector="tappedButton1:" destination="-1" eventType="touchUpInside" id="rob-RN-RVH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE0-Gg-oTj">
+                    <rect key="frame" x="184" y="144" width="46" height="30"/>
+                    <state key="normal" title="千葉県"/>
+                    <connections>
+                        <action selector="tappedButton2:" destination="-1" eventType="touchUpInside" id="wc6-7v-2KB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEn-Fb-d8c">
+                    <rect key="frame" x="176" y="194" width="62" height="30"/>
+                    <state key="normal" title="神奈川県"/>
+                    <connections>
+                        <action selector="tappedButton3:" destination="-1" eventType="touchUpInside" id="7cD-zQ-60H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtZ-RS-RVV">
+                    <rect key="frame" x="184" y="244" width="46" height="30"/>
+                    <state key="normal" title="埼玉県"/>
+                    <connections>
+                        <action selector="tappedButton4:" destination="-1" eventType="touchUpInside" id="zCE-1U-M4p"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBlueColor"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tjb-1F-clB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4W0-Yi-QBU"/>
+                <constraint firstItem="zE0-Gg-oTj" firstAttribute="top" secondItem="tjb-1F-clB" secondAttribute="bottom" constant="20" id="4vD-nj-ihP"/>
+                <constraint firstItem="HtZ-RS-RVV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hud-1k-TPq"/>
+                <constraint firstItem="rEn-Fb-d8c" firstAttribute="top" secondItem="zE0-Gg-oTj" secondAttribute="bottom" constant="20" id="RYH-oP-pKx"/>
+                <constraint firstItem="tjb-1F-clB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Wwo-tp-mxg"/>
+                <constraint firstItem="HtZ-RS-RVV" firstAttribute="top" secondItem="rEn-Fb-d8c" secondAttribute="bottom" constant="20" id="b7q-FJ-jvw"/>
+                <constraint firstItem="rEn-Fb-d8c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lVT-6Y-gqP"/>
+                <constraint firstItem="zE0-Gg-oTj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nTQ-M0-SjE"/>
+            </constraints>
             <point key="canvasLocation" x="14" y="44"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
