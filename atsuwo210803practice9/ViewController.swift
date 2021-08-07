@@ -18,17 +18,17 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        vc.didTapHandler1 = {
-            self.prefactureLabel.text = "東京都"
+        vc.didTapHandler1 = { [weak self] in
+            self?.prefactureLabel.text = "東京都"
         }
-        vc.didTapHandler2 = {
-            self.prefactureLabel.text = "千葉県"
+        vc.didTapHandler2 = { [weak self] in
+            self?.prefactureLabel.text = "千葉県"
         }
-        vc.didTapHandler3 = {
-            self.prefactureLabel.text = "神奈川県"
+        vc.didTapHandler3 = { [weak self] in
+            self?.prefactureLabel.text = "神奈川県"
         }
-        vc.didTapHandler4 = {
-            self.prefactureLabel.text = "埼玉県"
+        vc.didTapHandler4 = { [weak self] in
+            self?.prefactureLabel.text = "埼玉県"
         }
     }
 
