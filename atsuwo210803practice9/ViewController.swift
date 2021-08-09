@@ -9,33 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var prefactureLabel: UILabel!
-    let vc = ModalViewController()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        vc.didTapHandler1 = { [weak self] in
-            self?.prefactureLabel.text = "東京都"
-        }
-        vc.didTapHandler2 = { [weak self] in
-            self?.prefactureLabel.text = "千葉県"
-        }
-        vc.didTapHandler3 = { [weak self] in
-            self?.prefactureLabel.text = "神奈川県"
-        }
-        vc.didTapHandler4 = { [weak self] in
-            self?.prefactureLabel.text = "埼玉県"
-        }
-    }
+    @IBOutlet private weak var prefactureLabel: UILabel!
 
     @IBAction func tappedModal(_ sender: Any) {
+        let vc = ModalViewController()
+
+        vc.didSelectPrefecture = { [weak self] in
+            self?.prefactureLabel.text = $0
+            self?.dismiss(animated: true, completion: nil)
+        }
+
+        vc.didCancel = { [weak self] in
+            self?.dismiss(animated: true, completion: nil)
+        }
+
         let navi = UINavigationController(rootViewController: vc)
         navi.modalPresentationStyle = .fullScreen
         self.present(navi, animated: true, completion: nil)
     }
 }
-
